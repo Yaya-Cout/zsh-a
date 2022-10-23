@@ -23,7 +23,7 @@ function a-list() {
     z -l | cut -d ' ' -f 2-  | sed 's/^ *//' | tac
     # Run find search
     # find . -type d -not -path '*/\.*' -path '*/node_modules' 2>/dev/null
-    find . -type d -not -path '*/\.*' 2>/dev/null
+    find . -type d 2>/dev/null
 }
 
 
